@@ -1,8 +1,15 @@
+// collecting Data
 let inputBox = document.getElementById('input');
 let buttons = document.querySelectorAll('button');
 
+
+// Create an empty string 
 let string = "";
+
+//Convert the button data into an array
 let arr = Array.from(buttons);
+
+// I have attached the function that operates (=) when you click on it.
 arr.forEach(button => {
     button.addEventListener('click', (e) =>{
         if(e.target.innerHTML == '='){
